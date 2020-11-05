@@ -1,8 +1,10 @@
 import React from 'react';
+
 import githubLogo from '../../assets/github-logo.png';
 import disclamer from '../../assets/disclamer.json';
 import copyRights from '../../assets/copy_rights.json';
-import styles from './Footer.module.css ';
+
+import styles from './Footer.module.css';
 
 const Footer = () => (
   <div className={styles.footer}>
