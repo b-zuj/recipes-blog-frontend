@@ -5,10 +5,10 @@ import styles from './Card.module.css';
 const Card = ({ title, pictureURL }) => (
   <>
     <Link to={`/recipe/${title}`}>
-      <div className={styles.card}>
-        <h2 className={styles.card__header}>{title}</h2>
+      <article className={styles.card}>
         <img src={pictureURL} alt={title} className={styles.card__img}/>
-      </div>
+        <h2 className={styles.card__header}>{title}</h2>
+      </article>
     </Link>
   </>
   );

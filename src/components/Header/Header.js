@@ -7,13 +7,13 @@ import styles from './Header.module.css';
 
 const Header = () => (
   <header className={styles.header}>
-    <Link to="/">
+    <Link to="/" className={styles.header__homeLink}>
       <img className={styles.header__logo} src={muffin} alt="muffin logo" />
       <h1 className={styles.header__header}>BasiuBakes</h1>
     </Link>
-    <Link to="/about">
+    {/* <Link to="/about" className={styles.header__aboutLink}>
       <img className={styles.header__about} src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcScV6s6nq0mCKfy3cHSkQnBraKpfrZTcekJRQ&usqp=CAU" alt="about icon" />
-    </Link>
+    </Link> */}
   </header>
 );
 

@@ -30,24 +30,26 @@ const Recipe = () => {
   },[multiplier]);
 
   const sizeForm = currentRecipe['form-shape'] === 'round' ? (
-      <>
-        <h4 className={styles.recipe__sizeHeader}>This recipe is meant for {currentRecipe['form-size']} size springform.</h4>
+      <section className={styles.recipe__sizeSection}>
+        <h4 className={styles.sizeSection__header}>This recipe is meant for {currentRecipe['form-size']} size springform.</h4>
         <Form callback={calculateMultiplier} />
-      </>
+      </section>
     ) : null
   
   return (
     <article className={styles.recipe}>
       <header>
-        <img src={currentRecipe.pictureURL} alt={currentRecipe.title} />
-        <h2 className={styles.recipe__title}>{currentRecipe.title}</h2>
+        <img src={currentRecipe.pictureURL} alt={currentRecipe.title} className={styles.recipe__img} />
+        <h2 className={styles.recipe__header}>{currentRecipe.title}</h2>
         {sizeForm}
       </header>
-      <main>
+      <main className={styles.recipe__main} >
         <RecipeSection header={currentRecipe.header1} ingredients={ingredients1List} description={description1List} multiplier={multiplier}/>
-        <RecipeSection header={currentRecipe.header2} ingredients={ingredients2List} description={description2List} multiplier={multiplier}/>
+        {currentRecipe.header2 || description2List 
+          ? <RecipeSection header={currentRecipe.header2} ingredients={ingredients2List} description={description2List} multiplier={multiplier}/> 
+          : null }
       </main>
-      <footer>
+      <footer className={styles.recipe__footer}>
         <p>{currentRecipe.disclamer}</p>
       </footer>
     </article>

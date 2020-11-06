@@ -1,0 +1,11 @@
+.section {
+  /* margin: 20px ; */
+}
+
+.section__header {
+  margin: 20px 0 0;
+}
+
+.section__ul {
+  margin: 5px 0 30px;
+}

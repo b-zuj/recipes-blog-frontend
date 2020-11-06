@@ -11,7 +11,7 @@ const RecipeList = () => {
 
   return (
     <main className={styles.main}>
-      <h1 className={styles.main__header}>recipes list</h1>
+      <h1 className={styles.main__header}>Who wants some cake?</h1>
       {cards}
     </main>
   )
