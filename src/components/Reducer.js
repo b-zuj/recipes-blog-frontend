@@ -1,25 +1,19 @@
 import React from 'react';
 
-export const Context = React.createContext();
+export const MyContext = React.createContext();
 
-export const appReducer = (action, state) => {
+export const useMyContext =
+  () =>  React.useContext(MyContext);
+
+export const appReducer = (state, action) => {
+  console.log("action in appreducer", action)
   switch (action.type) {
-    case 'ADD_RECIPE_LIST': {
-      console.log('in reducer', action.payload)
-      return [ 
-        ...state,
-        {
-          recipes: action.payload,
-        }
-      ];
-    }
     case 'add': {
-      return [
+      console.log('in reducer')
+      return {
         ...state,
-        {
-          recipes: action.payload
-        },
-      ];
+        recipes: action.payload
+      };
     }
     default:
       return state;
