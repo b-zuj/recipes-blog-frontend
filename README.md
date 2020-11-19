@@ -4,7 +4,7 @@ This is project prepared for a one-day hackaton event. It contains a simple vers
 ## Motivation
 It is a learning-by-doing project that adds a unique function of form size converter for baking recipes, something that I have been missing in basically every baking blog I've ever visited.
 
-[![Build Status](https://travis-ci.com/travis-ci/travis-web.svg?branch=main&amp;status=passed)](https://travis-ci.com/github/travis-ci/travis-web)
+[![Build Status](https://travis-ci.com/travis-ci/travis-web.svg?branch=master)](https://travis-ci.com/travis-ci/travis-web)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
  
 ## Screenshots
