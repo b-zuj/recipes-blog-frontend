@@ -8,9 +8,6 @@ This is project prepared for a one-day hackaton event. It contains a simple vers
 ## Motivation
 It is a learning-by-doing project that adds a unique function of form size converter for baking recipes, something that I have been missing in basically every baking blog I've ever visited.
 
-## Screenshots
-Include logo/demo screenshot etc.
-
 ## Tech/framework used
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -18,7 +15,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 The blog is using custom backend app created as a part of this hackaton project - https://github.com/b-zuj/recipes-blog-backend
 
 ## Available Scripts
-
 In the project directory, you can run:
 
 > `yarn start`
